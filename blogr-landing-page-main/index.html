@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blogr</title>
+		<link rel="stylesheet" href="./main.css" />
+		<script src="./main.js" defer></script>
+	</head>
+	<body>
+		<main
+			class="relative bg-gradient-to-b md:bg-gradient-to-r from-g-light-red to-g-red pt-12 pb-40 md:pb-36 rounded-bl-[100px]">
+			<div
+				class="container md:max-w-6xl flex md:gap-4 flex-wrap items-center justify-between md:justify-normal relative px-7 mx-auto">
+				<img src="./images/logo.svg" alt="" />
+				<button
+					id="menuBtn"
+					class="flex flex-col justify-center items-center md:w-0 md:h-0 px-3 rounded md:invisible"
+					aria-label="open menu"
+					aria-expanded="false"
+					aria-controls="navList">
+					<span class="inline-block bg-white w-5 h-0.5 mt-2 rounded-full"></span>
+					<span class="inline-block bg-white w-5 h-0.5 my-1 rounded-full"></span>
+					<span class="inline-block bg-white w-5 h-0.5 mb-2 rounded-full"></span>
+				</button>
+				<nav
+					id="navList"
+					class="invisible md:visible basis-full md:basis-0 md:flex-grow absolute md:static top-16 right-0 left-0 bg-white md:bg-transparent w-0 md:w-auto h-0 md:h-auto p-7 md:p-0 pb-8 md:pb-0 mx-5 md:mx-0 rounded-md invisibl text-n-dark-blue md:text-white text-center md:text-left">
+					<ul class="md:flex items-center">
+						<li class="md:relative">
+							<button
+								id="navMenuProductBtn"
+								class="after:content-[''] after:inline-block after:bg-[url('./images/icon-arrow-dark.svg')] md:after:bg-[url('./images/icon-arrow-light.svg')] after:bg-no-repeat after:w-3 after:h-2"
+								aria-label="open product button"
+								aria-expanded="false"
+								aria-controls="navMenuProduct">
+								Product
+							</button>
+							<ul
+								id="navMenuProduct"
+								class="md:absolute md:top-7 md:right-0 bg-n-gray md:bg-white w-0 h-0 rounded-md space-y-2 md:text-n-dark-blue invisible">
+								<li>Overview</li>
+								<li>Pricing</li>
+								<li>PriciMarketplace</li>
+								<li>PriciFeatures</li>
+								<li>PriciIntegrations</li>
+							</ul>
+						</li>
+
+						<li class="md:relative md:ml-6">
+							<button
+								id="navMenuCompanyBtn"
+								class="mt-6 md:mt-0 after:content-[''] after:inline-block after:bg-[url('./images/icon-arrow-dark.svg')] md:after:bg-[url('./images/icon-arrow-light.svg')] after:bg-no-repeat after:w-3 after:h-2"
+								aria-label="open company button"
+								aria-expanded="false"
+								aria-controls="navMenuCompany">
+								Company
+							</button>
+							<ul
+								id="navMenuCompany"
+								class="md:absolute md:top-7 bg-n-gray md:bg-white w-0 h-0 rounded-md space-y-2 md:text-n-dark-blue invisible">
+								<li>About</li>
+								<li>Team</li>
+								<li>Blog</li>
+								<li>Careers</li>
+							</ul>
+						</li>
+
+						<li class="md:relative md:ml-6">
+							<button
+								id="navMenuConnectBtn"
+								class="mt-6 md:mt-0 after:content-[''] after:inline-block after:bg-[url('./images/icon-arrow-dark.svg')] md:after:bg-[url('./images/icon-arrow-light.svg')] after:bg-no-repeat after:w-3 after:h-2"
+								aria-label="open connect button"
+								aria-expanded="false"
+								aria-controls="navMenuConnect">
+								Connect
+							</button>
+							<ul
+								id="navMenuConnect"
+								class="md:absolute md:top-7 md:left-4 bg-n-gray md:bg-white w-0 h-0 rounded-md space-y-2 md:text-n-dark-blue invisible">
+								<li>Contact</li>
+								<li>Newsletter</li>
+								<li>LinkedIn</li>
+							</ul>
+						</li>
+
+						<li class="md:ml-auto">
+							<div
+								class="flex flex-col md:flex-row pt-6 md:pt-0 border-t md:border-t-0 border-n-gray mt-6 md:mt-0">
+								<button class="text-n-dark-blue md:text-white">Login</button>
+								<button
+									class="bg-gradient-to-r md:bg-none from-g-light-red to-g-red md:bg-g-light-red w-fit px-8 md:px-6 py-3 rounded-full mt-5 md:mt-0 mx-auto md:ml-6 text-white md:text-n-dark-blue">
+									Sign Up
+								</button>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<header class="container px-8 mt-28 mx-auto text-center">
+				<h1 class="text-white text-4xl">A modern publishing platform</h1>
+				<p class="mt-3 font-light text-white text-lg">
+					Grow your audience and build your online brand
+				</p>
+			</header>
+
+			<div class="flex justify-center px-10 mt-9">
+				<button
+					class="bg-white w-[136px] h-12 rounded-full text-primary-red hover:bg-primary-light-red hover:text-white">
+					Start for Free
+				</button>
+				<button
+					class="w-[136px] h-12 border-2 rounded-full ml-4 text-white hover:bg-white hover:border-0 hover:text-primary-red">
+					Learn More
+				</button>
+			</div>
+		</main>
+
+		<h2 class="container px-8 mt-24 mx-auto text-n-dark-blue text-2xl text-center">
+			Designed for the future
+		</h2>
+		<div class="md:grid md:grid-flow-col md:grid-cols-2 md:pl-36">
+			<div class="relative col-start-2 col-end-3">
+				<picture>
+					<source
+						srcset="./images/illustration-editor-desktop.svg"
+						media="(min-width: 768px)" />
+					<source srcset="./images/illustration-editor-mobile.svg" />
+					<img
+						src="./images/illustration-editor-mobile.svg"
+						alt=""
+						class="-translate-y-20 mt-12 md:mt-0 mx-auto" />
+				</picture>
+			</div>
+
+			<div
+				class="md:max-w-[510px] col-start-1 col-end-2 mt-8 md:mt-20 text-center md:text-left">
+				<header class="container px-8 md:px-0 mx-auto">
+					<h3 class="px-8 md:px-0 text-n-dark-blue text-2xl">
+						Introducing an extensible editor
+					</h3>
+					<p class="mt-4 text-n-dark-gray">
+						Blogr features an exceedingly intuitive interface which lets you focus on
+						one thing: creating content. The editor supports management of multiple
+						blogs and allows easy manipulation of embeds such as images, videos, and
+						Markdown. Extensibility with plugins and themes provide easy ways to add
+						functionality or change the looks of a blog.
+					</p>
+				</header>
+
+				<header class="container px-8 md:px-0 mt-10 md:mt-14 mx-auto">
+					<h3 class="px-8 md:px-0 text-n-dark-blue text-2xl">
+						Robust content management
+					</h3>
+					<p class="mt-4 text-n-dark-gray">
+						Flexible content management enables users to easily move through posts.
+						Increase the usability of your blog by adding customized categories,
+						sections, format, or flow. With this functionality, you’re in full control.
+					</p>
+				</header>
+			</div>
+		</div>
+
+		<div
+			class="relative bg-gradient-to-b from-g-dark-gray to-g-dark-blue pt-56 px-8 pb-28 rounded-tr-[100px] rounded-bl-[100px] mt-72 md:mt-0">
+			<div
+				class="bg-[url('images/bg-pattern-circles.svg')] bg-no-repeat bg-cover bg-[50%_-230px] md:bg-[-320px_-800px] w-full h-full absolute top-0 left-0 right-0 z-10 rounded-tr-[100px] rounded-bl-[100px] mx-auto"></div>
+			<img
+				src="./images/illustration-phones.svg"
+				alt=""
+				class="container md:max-w-lg absolute -top-44 md:top-0 left-0 right-0 z-20 px-3 mx-auto md:ml-28" />
+			<header
+				class="container md:max-w-lg relative z-30 mx-auto md:mr-36 text-center md:text-left">
+				<h2 class="text-white text-4xl">State of the Art Infrastructure</h2>
+				<p class="mt-5 font-light text-white">
+					With reliability and speed in mind, worldwide data centers provide the backbone
+					for ultra-fast connectivity. This ensures your site will load instantly, no
+					matter where your readers are, keeping your site competitive.
+				</p>
+			</header>
+		</div>
+
+		<div class="md:flex md:items-center md:pr-36">
+			<picture>
+				<source
+					srcset="./images/illustration-laptop-desktop.svg"
+					media="(min-width: 768px)" />
+				<source srcset="./images/illustration-laptop-mobile.svg" />
+				<img
+					src="./images/illustration-laptop-mobile.svg"
+					alt=""
+					class="basis-5/12 mt-16 mx-auto" />
+			</picture>
+			<div class="basis-7/12 text-center md:text-left">
+				<header class="container px-9 mt-9 mx-auto">
+					<h3 class="text-3xl">Free, open, simple</h3>
+					<p class="mt-6 font-light text-n-dark-gray">
+						Blogr is a free and open source application backed by a large community of
+						helpful developers. It supports features such as code syntax highlighting,
+						RSS feeds, social media integration, third-party commenting tools, and works
+						seamlessly with Google Analytics. The architecture is clean and is
+						relatively easy to learn.
+					</p>
+				</header>
+
+				<header class="container px-10 mt-10 mx-auto">
+					<h3 class="text-3xl">Powerful tooling</h3>
+					<p class="mt-6 font-light text-n-dark-gray">
+						Batteries included. We built a simple and straightforward CLI tool that
+						makes customization and deployment a breeze, but capable of producing even
+						the most complicated sites.
+					</p>
+				</header>
+			</div>
+		</div>
+
+		<footer
+			class="grid gap-9 md:grid-flow-col bg-n-dark-blue pt-16 md:pr-72 pb-20 rounded-tr-[100px] mt-24 text-white text-xl text-center">
+			<div class="container md:max-w-none mx-auto">
+				<img src="images/logo.svg" alt="" class="mx-auto" />
+			</div>
+			<div class="mt-8 md:mt-0">
+				<h4>Product</h4>
+				<ul class="space-y-1 mt-6 text-n-gray">
+					<li>Overview</li>
+					<li>Pricing</li>
+					<li>Marketplace</li>
+					<li>Features</li>
+					<li>Integrations</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Company</h4>
+				<ul class="space-y-1 mt-6 text-n-gray">
+					<li>About</li>
+					<li>Team</li>
+					<li>Blog</li>
+					<li>Careers</li>
+				</ul>
+			</div>
+
+			<div>
+				<h4>Connect</h4>
+				<ul class="space-y-1 mt-6 text-n-gray">
+					<li>Contact</li>
+					<li>Newsletter</li>
+					<li>LinkedIn</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
